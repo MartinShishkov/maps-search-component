@@ -4,6 +4,6 @@ A Trivago-like demo for my React wrapper component over google maps that allows 
 1. Clone the repo
 2. Run `npm run build`
 3. Run `npm run start`
-4. Naviage to `http://localhost:1337`
+4. Navigate to `http://localhost:1337`
 
 ![Demo GIF](/map-search-demo.gif "example demo gif")
