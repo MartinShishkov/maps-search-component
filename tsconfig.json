@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "module": "esnext",
+    "removeComments": false,
+    "sourceMap": false,
+    "target": "es5",
+    "jsx": "react",
+    "noEmit": true,
+    "importHelpers": true,
+    "lib": ["dom", "es5"],
+    "typeRoots": [
+      "node_modules/@types",
+      "types"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  
+}

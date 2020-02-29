@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>maps-search</title>
+    <style>
+        .btn.btn-default{
+            border: 1px solid #a2a2a2;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        .m-2{
+            margin: 10px;
+        }
+
+        .loading-bar {
+            height: 4px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background-color: #ddd;
+        }
+        .loading-bar:before{
+            display: block;
+            position: absolute;
+            content: "";
+            left: -200px;
+            width: 200px;
+            height: 4px;
+            background-color: #2980b9;
+            animation: loading-bar-anim 2s linear infinite;
+        }
+
+        @keyframes loading-bar-anim {
+            from {left: -200px; width: 30%;}
+            50% {width: 30%;}
+            70% {width: 70%;}
+            80% { left: 50%;}
+            95% {left: 120%;}
+            to {left: 100%;}
+        }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ_Q2ogCT0G5W98MaVkPI2Bx9RPg77h8I&libraries=drawing&language=bg"></script>
+    <script src="/lib/markerclusterer.js"></script>
+    <script src="/build/js/d.index.bundle.js"></script>
+  </body>
+</html>
